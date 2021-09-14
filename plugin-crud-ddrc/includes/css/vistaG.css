@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: 'TypoSlab';
+    src: url(../../TypoSlab.otf) format('otf');   
+}
+@font-face{
+    font-family: 'typeWrite';
+    src: url(../../TYPEWRITER.ttf) format('ttf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'cocogoose';
+    src: url(../../COCOGOOSE.ttf) format('ttf');
+}
+@font-face{
+    font-family: 'king';
+    src: url(../../Kingthings.ttf) format('ttf');
+}
+@font-face{
+    font-family: 'vale';
+    src: local('vale') url(../../Valentina.ttf) format('ttf');
+}
+
+.container{
+    display:inline;
+    justify-items: stretch;
+
+}
+
+.Saber {
+    display: inline;
+    position: relative;
+    
+    /* overflow: hidden; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.tituloSaber {
+    display: inline;
+    color: transparent;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0%);
+    transition: all 0.5s ease-out;
+}
+
+.Saber:hover .tituloSaber {
+    transform: translateY(150%);
+    background-color: rgba(0, 0, 0, 0.479);
+    color: rgb(52, 255, 228);
+    
+}
+label{
+    font-size: 1em;
+}
+input{
+    font-family: 'king';
+    font-size: 1.5em  ;
+}
+.text{
+    padding-left: 2em;
+font-family: 'typeWrite';
+font-size: 14px;
+}
+pre{
+    width: fit-content;
+}
+.title{
+    font-family: 'vale';
+    font-style: italic;
+    font-size: 4em;
+}
+.title1{
+    font-family: 'cocogoose';
+    font-size: 2em;
+}

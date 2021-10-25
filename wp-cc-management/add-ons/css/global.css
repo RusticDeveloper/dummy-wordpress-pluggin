@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'typeWrite';
+    src        : url(../../Assets/Fonts/TYPEWRITER.ttf) format('ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'cocogoose';
+    src        : url(../../Assets/Fonts/COCOGOOSE.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'king';
+    src        : url(../../Assets/Fonts/Kingthings.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'vale';
+    src        : local('vale') url(../../Assets/Fonts/Valentina.ttf) format('ttf');
+}
+
+.container {
+    display      : inline;
+    justify-items: stretch;
+
+}
+
+.Saber {
+    display    : inline;
+    position   : relative;
+    overflow   : hidden;
+    white-space: nowrap;
+    overflow-x : hidden;
+    overflow-y : hidden;
+}
+
+.tituloSaber {
+    display: inline;
+}
+
+.tituloSaber>h3 {
+    display         : inline;
+    color           : transparent;
+    background-color: transparent;
+    position        : absolute;
+    padding         : 0%;
+    border-radius   : 25px;
+    transform       : translateY(400%);
+    transition      : all 0.5s ease-out;
+}
+
+.tituloSaber:hover>h3 {
+    /* transform: translateY(200%); */
+    background-color: rgba(0, 0, 0, 0.575);
+    color           : rgb(0, 183, 255);
+
+}
+
+h3 {
+    padding: 5%;
+}
+
+label {
+    font-size: 1em;
+}
+
+input {
+    font-family: 'king';
+    font-size  : 1.5em;
+}
+
+.text {
+    padding-left: 2em;
+    font-family : 'typeWrite';
+    font-size   : 14px;
+}
+
+pre {
+    width: fit-content;
+}
+
+.title {
+    font-family: 'vale';
+    font-style : italic;
+    font-size  : 4em;
+}
+
+.title1 {
+    font-family: 'cocogoose';
+    font-size  : 2em;
+}
+
+.animacion {
+    display    : inline-flex;
+    width      : fit-content;
+    height     : fit-content;
+    position   : relative;
+    /* overflow: hidden; */
+    transition : .3 ease all;
+}
+
+.animacion svg {
+    width   : 100%;
+    height  : 100%;
+    fill    : none;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+}
+
+.animacion rect {
+    width            : 100%;
+    height           : 100%;
+    stroke           : black;
+    stroke-width     : 5px;
+    stroke-dasharray : 1000;
+    stroke-dashoffset: 1000;
+    stroke-linecap   : round;
+    transition       : 1s ease-in all;
+}
+
+.animacion:hover rect {
+    top              : 0px;
+    stroke-dashoffset: 0;
+}
